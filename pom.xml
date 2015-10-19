@@ -49,12 +49,6 @@
       </snapshotRepository>
     </distributionManagement>
 
-    <scm>
-       <connection>scm:masauve:redhat1!@github.com:masauve/continuous-delivery-demo-app</connection>
-       <url>scm:masauve:redhat1!@github.com:masauve/continuous-delivery-demo-app</url>
-       <developerConnection>scm:masauve:redhat1!@github.com:masauve/continuous-delivery-demo-app</developerConnection>
-       <tag>HEAD</tag>
-    </scm>
 
     <dependencyManagement>
         <dependencies>
