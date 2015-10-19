@@ -42,6 +42,11 @@
          <name>Internal Releases</name>
          <url>http://nexus:8081/nexus/content/repositories/releases/</url>
       </repository>
+      <repository>
+         <id>artifact-repository</id>
+         <name>Internal Releases</name>
+         <url>http://nexus:8081/nexus/content/repositories/releases/</url>
+      </repository>
       <snapshotRepository>
          <id>deployment</id>
          <name>Internal Releases</name>
