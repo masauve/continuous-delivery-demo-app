@@ -12,23 +12,23 @@
     <description>A starter HTML5 + REST webapp project for use on JBoss EAP.</description>
 
     <properties>
-        <!-- Explicitly declaring the source encoding eliminates the following 
+        <!-- Explicitly declaring the source encoding eliminates the following
             message: -->
-        <!-- [WARNING] Using platform encoding (UTF-8 actually) to copy filtered 
+        <!-- [WARNING] Using platform encoding (UTF-8 actually) to copy filtered
             resources, i.e. build is platform dependent! -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!-- Timestamp format for the maven.build.timestamp property -->
-        <!-- You can reference property in pom.xml or filtered resources 
+        <!-- You can reference property in pom.xml or filtered resources
             (must enable third-party plugin if using Maven < 2.1) -->
         <maven.build.timestamp.format>yyyyMMdd'T'HHmmss</maven.build.timestamp.format>
-        <!-- Specify the JBoss AS directory to be the JBOSS_HOME environment 
+        <!-- Specify the JBoss AS directory to be the JBOSS_HOME environment
             variable -->
         <jboss.home>${env.JBOSS_HOME}</jboss.home>
-        <!-- Define the version of JBoss' Java EE 6 APIs and Tools we want 
+        <!-- Define the version of JBoss' Java EE 6 APIs and Tools we want
             to import. -->
         <!-- <jboss.bom.version>1.0.4.Final-redhat-9</jboss.bom.version> -->
-        <!-- Alternatively, comment out the above line, and un-comment the 
-            line below to use version 1.0.4.Final-redhat-9 which is a release certified 
+        <!-- Alternatively, comment out the above line, and un-comment the
+            line below to use version 1.0.4.Final-redhat-9 which is a release certified
             to work with JBoss EAP 6.2. It requires you have access to the JBoss EAP 6.2
             maven repository. -->
         <jboss.bom.version>6.2.3.GA</jboss.bom.version>
@@ -50,21 +50,21 @@
     </distributionManagement>
 
     <scm>
-       <connection>scm:git:git@github.com:jbossdemocentral/continuous-delivery-demo-app.git</connection>
-       <url>scm:git:git@github.com:jbossdemocentral/continuous-delivery-demo-app.git</url>
-       <developerConnection>scm:git:git@github.com:jbossdemocentral/continuous-delivery-demo-app.git</developerConnection>
+       <connection>scm:msauve:redhat1!@github.com:masauve/continuous-delivery-demo-app</connection>
+       <url>scm:msauve:redhat1!@github.com:masauve/continuous-delivery-demo-app</url>
+       <developerConnection>scm:msauve:redhat1!@github.com:masauve/continuous-delivery-demo-app</developerConnection>
        <tag>HEAD</tag>
     </scm>
 
     <dependencyManagement>
         <dependencies>
-            <!-- JBoss distributes a complete set of Java EE 6 APIs including 
-                a Bill of Materials (BOM). A BOM specifies the versions of a "stack" (or 
-                a collection) of artifacts. We use this here so that we always get the correct 
-                versions of artifacts. Here we use the jboss-javaee-6.0-with-tools stack 
-                (you can read this as the JBoss stack of the Java EE 6 APIs, with some extras 
-                tools for your project, such as Arquillian for testing), the jboss-javaee-6.0-with-hibernate 
-                stack (you can read this as the JBoss stack of the Java EE 6 APIs, with extras 
+            <!-- JBoss distributes a complete set of Java EE 6 APIs including
+                a Bill of Materials (BOM). A BOM specifies the versions of a "stack" (or
+                a collection) of artifacts. We use this here so that we always get the correct
+                versions of artifacts. Here we use the jboss-javaee-6.0-with-tools stack
+                (you can read this as the JBoss stack of the Java EE 6 APIs, with some extras
+                tools for your project, such as Arquillian for testing), the jboss-javaee-6.0-with-hibernate
+                stack (you can read this as the JBoss stack of the Java EE 6 APIs, with extras
                 from the Hibernate family of projects), and the jboss-javaee-6.0-with-resteasy
                 stack (you can read this as the JBoss stack of the Java EE 6 APIs, with extras
                 from the RESTEasy project). -->
@@ -94,30 +94,30 @@
 
     <dependencies>
 
-        <!-- First declare the APIs we depend on and need for compilation. 
+        <!-- First declare the APIs we depend on and need for compilation.
             All of them are provided by JBoss EAP -->
 
-        <!-- Import the CDI API, we use provided scope as the API is included 
+        <!-- Import the CDI API, we use provided scope as the API is included
             in JBoss EAP -->
         <dependency>
             <groupId>javax.enterprise</groupId>
             <artifactId>cdi-api</artifactId>
             <scope>provided</scope>
         </dependency>
-        
+
         <dependency>
             <groupId>javax.inject</groupId>
             <artifactId>javax.inject</artifactId>
             <scope>provided</scope>
         </dependency>
-        
+
         <dependency>
             <groupId>javax.validation</groupId>
             <artifactId>validation-api</artifactId>
             <scope>provided</scope>
         </dependency>
-       
-        <!-- Import the Common Annotations API (JSR-250), we use provided 
+
+        <!-- Import the Common Annotations API (JSR-250), we use provided
             scope as the API is included in JBoss EAP -->
         <dependency>
             <groupId>org.jboss.spec.javax.annotation</groupId>
@@ -125,7 +125,7 @@
             <scope>provided</scope>
         </dependency>
 
-        <!-- Import the JAX-RS API, we use provided scope as the API is included 
+        <!-- Import the JAX-RS API, we use provided scope as the API is included
             in JBoss EAP -->
         <dependency>
             <groupId>org.jboss.spec.javax.ws.rs</groupId>
@@ -133,7 +133,7 @@
             <scope>provided</scope>
         </dependency>
 
-        <!-- Import the JPA API, we use provided scope as the API is included 
+        <!-- Import the JPA API, we use provided scope as the API is included
             in JBoss EAP -->
         <dependency>
             <groupId>org.hibernate.javax.persistence</groupId>
@@ -141,7 +141,7 @@
             <scope>provided</scope>
         </dependency>
 
-        <!-- Import the EJB API, we use provided scope as the API is included 
+        <!-- Import the EJB API, we use provided scope as the API is included
             in JBoss EAP -->
         <dependency>
             <groupId>org.jboss.spec.javax.ejb</groupId>
@@ -149,7 +149,7 @@
             <scope>provided</scope>
         </dependency>
 
-        <!-- Import the Servlet API, we use provided scope as the API is 
+        <!-- Import the Servlet API, we use provided scope as the API is
             included in JBoss EAP -->
         <dependency>
             <groupId>org.jboss.spec.javax.servlet</groupId>
@@ -175,7 +175,7 @@
 
         <!-- Now we declare any tools needed -->
 
-        <!-- Annotation processor to generate the JPA 2.0 metamodel classes 
+        <!-- Annotation processor to generate the JPA 2.0 metamodel classes
             for typesafe criteria queries -->
         <dependency>
             <groupId>org.hibernate</groupId>
@@ -191,7 +191,7 @@
         </dependency>
 
         <!-- Optional, but highly recommended -->
-        <!-- Arquillian allows you to test enterprise code such as EJBs and 
+        <!-- Arquillian allows you to test enterprise code such as EJBs and
             Transactional(JTA) JPA from JUnit/TestNG -->
         <dependency>
             <groupId>org.jboss.arquillian.junit</groupId>
@@ -204,7 +204,7 @@
             <artifactId>arquillian-protocol-servlet</artifactId>
             <scope>test</scope>
         </dependency>
-        
+
         <dependency>
             <groupId>org.jboss.shrinkwrap.resolver</groupId>
             <artifactId>shrinkwrap-resolver-depchain</artifactId>
@@ -271,9 +271,9 @@
 
     <profiles>
         <profile>
-            <!-- The default profile skips all tests, though you can tune 
+            <!-- The default profile skips all tests, though you can tune
                 it to run just unit tests based on a custom pattern -->
-            <!-- Seperate profiles are provided for running all tests, including 
+            <!-- Seperate profiles are provided for running all tests, including
                 Arquillian tests that execute in the specified container -->
             <id>default</id>
             <activation>
@@ -294,9 +294,9 @@
 
 
         <profile>
-            <!-- An optional Arquillian testing profile that executes tests 
+            <!-- An optional Arquillian testing profile that executes tests
                 in your JBoss AS instance -->
-            <!-- This profile will start a new JBoss AS instance, and execute 
+            <!-- This profile will start a new JBoss AS instance, and execute
                 the test, shutting it down when done -->
             <!-- Run with: mvn clean test -Parq-jbossas-managed -->
             <id>arq-jbossas-managed</id>
@@ -310,7 +310,7 @@
         </profile>
 
         <profile>
-            <!-- An optional Arquillian testing profile that executes tests 
+            <!-- An optional Arquillian testing profile that executes tests
                 in a remote JBoss AS instance -->
             <!-- Run with: mvn clean test -Parq-jbossas-remote -->
             <id>arq-jbossas-remote</id>
@@ -352,7 +352,7 @@
                 </plugins>
             </build>
         </profile>
-        
+
         <profile>
             <!-- An optional profile that enables a server managed postgresql data source-->
             <id>postgresql</id>
@@ -410,7 +410,7 @@
                         <configuration>
                             <skip>true</skip>
                         </configuration>
-                    </plugin>                    
+                    </plugin>
                     <plugin>
                         <groupId>org.codehaus.mojo</groupId>
                         <artifactId>exec-maven-plugin</artifactId>
@@ -433,7 +433,7 @@
                 </plugins>
             </build>
         </profile>
-        
+
         <profile>
 		  <!-- When built in OpenShift the 'openshift' profile will be used when invoking mvn. -->
 		  <!-- Use this profile for any OpenShift specific customization your app will need. -->
