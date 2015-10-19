@@ -50,9 +50,9 @@
     </distributionManagement>
 
     <scm>
-       <connection>scm:msauve:redhat1!@github.com:masauve/continuous-delivery-demo-app</connection>
-       <url>scm:msauve:redhat1!@github.com:masauve/continuous-delivery-demo-app</url>
-       <developerConnection>scm:msauve:redhat1!@github.com:masauve/continuous-delivery-demo-app</developerConnection>
+       <connection>scm:masauve:redhat1!@github.com:masauve/continuous-delivery-demo-app</connection>
+       <url>scm:masauve:redhat1!@github.com:masauve/continuous-delivery-demo-app</url>
+       <developerConnection>scm:masauve:redhat1!@github.com:masauve/continuous-delivery-demo-app</developerConnection>
        <tag>HEAD</tag>
     </scm>
 
