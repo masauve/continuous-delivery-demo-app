@@ -26,12 +26,12 @@
         <jboss.home>${env.JBOSS_HOME}</jboss.home>
         <!-- Define the version of JBoss' Java EE 6 APIs and Tools we want
             to import. -->
-        <!-- <jboss.bom.version>1.0.4.Final-redhat-9</jboss.bom.version> -->
+        <!--  <jboss.bom.version>1.0.4.Final-redhat-9</jboss.bom.version> -->
         <!-- Alternatively, comment out the above line, and un-comment the
             line below to use version 1.0.4.Final-redhat-9 which is a release certified
             to work with JBoss EAP 6.2. It requires you have access to the JBoss EAP 6.2
             maven repository. -->
-        <jboss.bom.version>6.2.3.GA</jboss.bom.version>
+        <jboss.bom.version>6.4.0.GA</jboss.bom.version>
         <jboss.wfk.bom.version>2.6.0-redhat-1</jboss.wfk.bom.version>
         <buildhelper.plugin.version>1.7</buildhelper.plugin.version>
     </properties>
