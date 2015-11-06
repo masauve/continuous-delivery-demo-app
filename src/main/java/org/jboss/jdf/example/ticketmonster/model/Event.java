@@ -3,6 +3,7 @@ package org.jboss.jdf.example.ticketmonster.model;
 import static javax.persistence.GenerationType.IDENTITY;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -131,6 +132,13 @@ public class Event implements Serializable {
         this.id = id;
     }
 
+    public ArrayList getA(ArrayList param1)
+    {
+    	
+    	ArrayList a = new ArrayList();
+    	return new ArrayList();
+    }
+    
     public String getName() {
         return name;
     }
