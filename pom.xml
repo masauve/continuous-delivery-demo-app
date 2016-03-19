@@ -41,11 +41,15 @@
          <id>deployment</id>
          <name>Internal Releases</name>
          <url>http://nexus.msauve.dev/content/repositories/releases/</url>
+	 <username>admin</username>
+	 <password>admin123</password>
       </repository>
       <snapshotRepository>
          <id>deployment</id>
          <name>Internal Releases</name>
          <url>http://nexus.msauve.dev/content/repositories/snapshots/</url>
+	 <username>admin</username>
+	 <password>admin123</password>
       </snapshotRepository>
     </distributionManagement>
 
