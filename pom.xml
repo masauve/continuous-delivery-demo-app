@@ -40,12 +40,12 @@
       <repository>
          <id>deployment</id>
          <name>Internal Releases</name>
-         <url>http://nexus.vagrant.f8/content/repositories/releases/</url>
+         <url>http://nexus.msauve.dev/content/repositories/releases/</url>
       </repository>
       <snapshotRepository>
          <id>deployment</id>
          <name>Internal Releases</name>
-         <url>http://nexus.vagrant.f8/content/repositories/snapshots/</url>
+         <url>http://nexus.msauve.dev/content/repositories/snapshots/</url>
       </snapshotRepository>
     </distributionManagement>
 
