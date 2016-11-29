@@ -4,7 +4,7 @@
 
     <groupId>org.jboss.examples</groupId>
     <artifactId>ticket-monster</artifactId>
-    <version>2.6.99</version>
+    <version>1.2-SNAPSHOT</version>
     <packaging>war</packaging>
 
     <name>ticket-monster</name>
@@ -45,7 +45,7 @@
       <snapshotRepository>
          <id>nexus</id>
          <name>Internal Releases</name>
-         <url>http://54.174.182.120:8082/nexus/content/repositories/snapsnots/</url>
+         <url>http://54.174.182.120:8082/nexus/content/repositories/snapshots/</url>
       </snapshotRepository>
     </distributionManagement>
     <dependencyManagement>
