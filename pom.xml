@@ -36,19 +36,18 @@
         <buildhelper.plugin.version>1.7</buildhelper.plugin.version>
     </properties>
 
-    <distributionManagement>
+   <distributionManagement>
       <repository>
-         <id>deployment</id>
+         <id>nexus</id>
          <name>Internal Releases</name>
-         <url>http://54.174.182.120:8082/content/repositories/releases/</url>
+         <url>http://54.174.182.120:8082/nexus/content/repositories/releases/</url>
       </repository>
       <snapshotRepository>
-         <id>deployment</id>
+         <id>nexus</id>
          <name>Internal Releases</name>
-         <url>http://54.174.182.120:8082/content/repositories/snapshots/</url>
+         <url>http://54.174.182.120:8082/nexus/content/repositories/snapsnots/</url>
       </snapshotRepository>
     </distributionManagement>
-
     <dependencyManagement>
         <dependencies>
             <!-- JBoss distributes a complete set of Java EE 6 APIs including
