@@ -40,15 +40,14 @@
       <repository>
          <id>deployment</id>
          <name>Internal Releases</name>
-         <url>http://nexus.msauve.dev/content/repositories/releases/</url>
+         <url>http://54.174.182.120:8082/nexus/repositories/releases/</url>
       </repository>
       <snapshotRepository>
          <id>deployment</id>
          <name>Internal Releases</name>
-         <url>http://nexus.msauve.dev/content/repositories/snapshots/</url>
+         <url>http://54.174.182.120:8082/nexus/repositories/snapshots/</url>
       </snapshotRepository>
     </distributionManagement>
-
 
     <dependencyManagement>
         <dependencies>
